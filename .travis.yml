@@ -3,15 +3,12 @@ install: true
 
 jdk:
   - oraclejdk8
-  
-before_install:
- - chmod +x gradlew
  
- addons:
-  sonarcloud:
-    organization: "sriharisahu-github" # the key of the org you chose at step #3
-    token:
-      secure: 65846feaf88d067a79011788d9cc1f7fde76bb1a
+addons:
+sonarcloud:
+  organization: "sriharisahu-github" # the key of the org you chose at step #3
+  token:
+    secure: 65846feaf88d067a79011788d9cc1f7fde76bb1a
 
 script:
   - ./gradlew build test dependencyCheckAnalyze sonarqube
