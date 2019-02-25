@@ -14,4 +14,4 @@ before_install:
       secure: 65846feaf88d067a79011788d9cc1f7fde76bb1a
 
 script:
-  - ./gradlew build test dependencyCheckAnalyze sonar:sonar
+  - ./gradlew build test dependencyCheckAnalyze sonarqube
