@@ -51,8 +51,10 @@ dependencies {
 
 sonarqube {
     properties {
-        property "sonar.host.url", "http://localhost:9000"
-        property "sonar.login", ""
+        property "sonar.host.url", "https://sonarcloud.io"
+        property "sonar.login", "65846feaf88d067a79011788d9cc1f7fde76bb1a"
+        property "sonar.projectKey", "sriharisahu_unsecure"
+        property "sonar.organization", "sriharisahu-github"
         property "sonar.sourceEncoding", "UTF-8"
     }
 }
